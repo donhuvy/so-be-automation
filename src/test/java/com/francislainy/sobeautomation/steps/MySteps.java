@@ -16,7 +16,8 @@ public class MySteps {
 
     @Given("I send a GET request to the Bored API")
     public void iSendAGETRequestToTheBoredAPI() {
-        response = restClient.getRequestSpecification().get("https://www.boredapi.com/api/activity");
+        response = restClient.getRequestSpecification().get("https://google.com");
+        System.out.println(">>> foo");
     }
 
     @Then("the response status should be {int}")
